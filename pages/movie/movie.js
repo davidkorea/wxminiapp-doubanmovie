@@ -16,6 +16,17 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
+    wx.request({
+      url: api_url+options.id,
+      data: {},
+      header: {
+        'content-type': 'json' // 默认值application/json是真的不能用啊...无语
+      },
+      success: function (res) {
+        console.log(res.data)
+      }
+      
+    })
   },
 
   /**
