@@ -8,14 +8,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    movie:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
+    // console.log(options)
+    var that = this;
     wx.request({
       url: api_url+options.id,
       data: {},
@@ -23,7 +24,12 @@ Page({
         'content-type': 'json' // 默认值application/json是真的不能用啊...无语
       },
       success: function (res) {
-        console.log(res.data)
+        console.log(res.data);
+        var movie = that.data.movie;
+        that.setData({
+          movie: res.data
+        });
+        console.log(movie)
       }
       
     })

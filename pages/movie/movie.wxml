@@ -1,3 +1,19 @@
-<!--pages/movie/movie.wxml-->
-<text>pages/movie/movie.wxml</text>
-api = 'https://douban.uieee.com/v2/movie/subject/'
+<scroll-view scroll-y='true' class='page-body'>
+  <view>
+    <image class='poster' src='{{movie.images.large}}'></image>
+    <text class='title'>{{movie.title}}</text>
+    <view class='item'>
+      <text class='rating'>Rate: {{movie.rating.average}}</text>
+      <text class='director'>Directors: 
+        <block wx:for='{{movie.directors}}'>{{item.name}}</block>
+      </text>
+      <text class='actor'>Actors: 
+        <block wx:for='{{movie.casts}}'>{{item.name}}</block>
+      </text>
+    </view>
+  </view>
+
+  <view class='summary'>
+    <text>{{movie.summary}}</text>
+  </view>
+</scroll-view>
