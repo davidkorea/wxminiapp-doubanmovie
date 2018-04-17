@@ -13,7 +13,8 @@
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
   },
-  "tabBar": {
+  "tabBar": {    
+    "selectedColor": "#1296db",
     "list": [{
       "pagePath": "pages/index/index",
       "text": "Hot",
@@ -22,13 +23,13 @@
     },
     {
       "pagePath": "pages/search/search",
-      "text": "Hot",
+      "text": "Search",
       "iconPath": "icon/search.png",
       "selectedIconPath": "icon/search-active.png"
     },
     {
       "pagePath": "pages/profile/profile",
-      "text": "Hot",
+      "text": "Me",
       "iconPath": "icon/profile.png",
       "selectedIconPath": "icon/profile-active.png"
     }]
