@@ -13,8 +13,8 @@ using https://douban.uieee.com instead of https://api.douban.com
 
 # Issue 2 - Please enter a commit message to explain why this merge is necessary
 
-* 1. <Enter> 'i' to insert msg
+1. input 'i' to insert msg
 
-* 2. <Esc>
-
-* 3. input ':wq' and <Enter> to quit his mode
+2. exit by 'esc'
+ 
+3. input ':wq' and 'Enter' to quit his mode
