@@ -1,4 +1,7 @@
 // pages/movie/movie.js
+
+var api_url = 'https://douban.uieee.com/v2/movie/subject/';
+
 Page({
 
   /**
@@ -12,7 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(options)
   },
 
   /**

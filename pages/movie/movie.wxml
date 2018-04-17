@@ -1,2 +1,3 @@
 <!--pages/movie/movie.wxml-->
 <text>pages/movie/movie.wxml</text>
+api = 'https://douban.uieee.com/v2/movie/subject/'

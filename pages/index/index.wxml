@@ -3,7 +3,7 @@
   <text class='page-header-text'>{{title}}</text>
 </view>
 <scroll-view class='page-body' scroll-y='true'>
-  <navigator url='../movie/movie' wx:for='{{movies}}' wx:key='{{index}}'> 
+  <navigator url='../movie/movie?id={{item.id}}' wx:for='{{movies}}' wx:key='{{index}}'> 
     <view class='item'>
       <image class='poster' src='{{item.images.small}}'></image>
       <view class='meta'>
