@@ -13,9 +13,9 @@ page{
 }
 
 .page-heade-text{
-  padding: 20rpx 40rpx;
+  padding: 40rpx;
   color: #999;
-  font-size: 40rpx;
+  font-size: 80rpx;
 }
 
 .page-body{
