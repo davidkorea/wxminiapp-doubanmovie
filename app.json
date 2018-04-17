@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/search/search",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Douban Movie",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Hot",
+      "iconPath": "icon/hot.png",
+      "selectedIconPath": "icon/hot-active.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "Hot",
+      "iconPath": "icon/search.png",
+      "selectedIconPath": "icon/search-active.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "Hot",
+      "iconPath": "icon/profile.png",
+      "selectedIconPath": "icon/profile-active.png"
+    }]
+  }
+}
