@@ -1,2 +1,7 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class='pfile'>
+  <view class='image'>
+    <image class='pic' src='../../icon/profile-active.png'></image>
+  </view>
+  <text class='name'>david</text>
+  <text class='date'>2018-04-18</text>
+</view>
