@@ -1,2 +1,23 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class='page-header'>
+  <input type='text' class='page-header-text' placeholder='search...' focus='true' bindblur='change' />
+</view>
+
+<scroll-view class='page-body' scroll-y='true'>
+  <navigator url='../movie/movie?id={{item.id}}' wx:for='{{movies}}' wx:key='{{index}}'> 
+    <view class='item'>
+      <image class='poster' src='{{item.images.small}}'></image>
+      <view class='meta'>
+        <text class='title'>{{item.title}}</text>
+        <text class='sub-title'>{{item.original_title}}（{{item.year}}）</text>
+        <text class='artists'>
+          <text wx:for='{{item.directors}}' wx:key='{{index}}'>{{item.name}}</text>
+          <!-- 换行多了，会导致页面中出现莫名其妙的padding效果 -->
+        </text>
+      </view>
+      <view class='rating'>
+        <text>{{item.rating.average}}</text>
+      </view>
+      
+    </view>
+  </navigator>
+</scroll-view>
