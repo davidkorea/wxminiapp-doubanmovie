@@ -1,1 +1,41 @@
-/* pages/movie/movie.wxss */
+page{
+  font-family: "Microsofy Yahei";
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.meta{
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.meta .poster{
+  margin: 40rpx;
+  width: 600rpx;
+  height: 800rpx;
+}
+
+.meta .rating, .meta .director, .meta .actor{
+  display: block;
+  /* 似的主标题和副标题断行 */
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+}
+
+.meta .title{
+  display: flex;
+  justify-content: center;
+  padding: 10rpx;
+  font-size: 40rpx;
+}
+
+.summary{
+  padding: 40rpx;
+  font-size: 36rpx;
+}
+
+.summary .label, .summary .content{
+  display: block;
+  margin-bottom: 10rpx;
+}
