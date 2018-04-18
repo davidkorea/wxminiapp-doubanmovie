@@ -5,9 +5,9 @@
     
     <text class='rating'>Rate: {{movie.rating.average}}</text>
 
-    <text class='director'>Directors: <block wx:for='{{movie.directors}}'> {{item.name}}</block></text>
+    <text class='director'>Directors: <block wx:for='{{movie.directors}}' wx:key='{{index}}'> {{item.name}}</block></text>
     
-    <text class='actor'>Actors: <block wx:for='{{movie.casts}}'> {{item.name}}</block></text>
+    <text class='actor'>Actors: <block wx:for='{{movie.casts}}' wx:key='{{index}}'> {{item.name}}</block></text>
     
   </view>
 
