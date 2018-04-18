@@ -1,19 +1,20 @@
-<scroll-view scroll-y='true' class='page-body'>
-  <view>
+<scroll-view scroll-y='true'>
+  <view class='meta'>
     <image class='poster' src='{{movie.images.large}}'></image>
     <text class='title'>{{movie.title}}</text>
-    <view class='item'>
-      <text class='rating'>Rate: {{movie.rating.average}}</text>
-      <text class='director'>Directors: 
-        <block wx:for='{{movie.directors}}'>{{item.name}}</block>
-      </text>
-      <text class='actor'>Actors: 
-        <block wx:for='{{movie.casts}}'>{{item.name}}</block>
-      </text>
-    </view>
+    
+    <text class='rating'>Rate: {{movie.rating.average}}</text>
+
+    <text class='director'>Directors: <block wx:for='{{movie.directors}}'> {{item.name}}</block></text>
+    
+    <text class='actor'>Actors: <block wx:for='{{movie.casts}}'> {{item.name}}</block></text>
+    
   </view>
 
   <view class='summary'>
-    <text>{{movie.summary}}</text>
+    <label class='label'>
+    Summary:
+    </label>
+    <text class='content'>{{movie.summary}}</text>
   </view>
 </scroll-view>
